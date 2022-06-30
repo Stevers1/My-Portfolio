@@ -61,6 +61,9 @@ article {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image:url("image_objects/Ellipse\ 19@2x.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 #skills {
@@ -83,13 +86,7 @@ article {
   color:blueviolet
 }
 
-.right-light{
 
-  
-  float: right;
-  
-  
-}
 
 
 
