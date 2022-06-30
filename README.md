@@ -7,6 +7,9 @@
 - HTML
 - CSS
 
+## Getting Started
+> Just download or clone my repo and check with an IDE to review my code.
+
 ## Author
 
 - GitHub: [@stevers1](https://github.com/Stevers1)
