@@ -1,1 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
+  background-color: #191765;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./images/Ellipse 18@2xleft.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  margin: 0;
+}
+
+.name-intro {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #7d73fc;
+  padding-bottom: 3vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profesion {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 138%;
+  color: #edecff;
+  padding-bottom: 9vh;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.bio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #c8c8d4;
+  padding: 0 25px 30px 25px;
+}
+
+.divider {
+  width: 370px;
+  height: 0;
+  border: 1px solid grey;
+  margin: auto;
+}
+
+.skills {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  background-image: url("./images/Ellipse 19@2x.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.skills2 {
+  flex: 40%;
+  padding-left: 40px;
+}
+
+.list,
+li {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.tskill {
+  color: #9490ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.workarrow {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.arrow {
+  width: 15px;
+  height: 10px;
+  padding-right: 5px;
+}
+
+.pwork {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #a2a3ae;
+}
+
+.logo-placeholder {
+  padding-left: 15px;
+}
