@@ -141,13 +141,20 @@
 
   <form action="submit" class="contact">
     <div class="title-contact">CONTACT US</div>
+    
     <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-    <div class="text-inputs">
-      <input type="text" placeholder="Text input" class="text-input">
-      <input type="email" placeholder="uberkootra@gmail.com" class="text-input">
-      <textarea name="message" id="textmessage" cols="30" rows="5" placeholder="Enter text here"></textarea>
-    </div>
-    <button class="seebutton" type="submit" id="finalbutton">Send</button>
+    
+    <form class="text-inputs" method="POST" action="https://formspree.io/f/mayvgewg" name="simple-contact-form">
+      <input type="text" placeholder="Your name" class="text-input" maxlength="30" required name="name">
+
+      <input type="email" placeholder="uberkootra@gmail.com" class="text-input" required name="email">
+
+      <textarea name="message" id="textmessage" cols="30" rows="5" placeholder="Enter text here" maxlength="500" required></textarea>
+
+      <button class="seebutton" type="submit" id="finalbutton" value="Submit">Send</button>
+
+    </form>
+    
   </form>
 
   <footer>
