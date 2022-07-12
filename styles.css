@@ -6,9 +6,10 @@ body {
   background-color: #191765;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-image: url("./images/Ellipse 18@2xleft.png");
-  background-repeat: no-repeat;
-  background-size: 150px;
+  background-image: url("./images/Ellipse 18@2xleft.png"), url('./images/Group65-1.png');
+  background-position: top left, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150px, 100%;
   margin: 0;
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 .divider {
-  width: 370px;
+  width: 327px;
   height: 0;
   border: 1px solid grey;
   margin: auto;
@@ -65,7 +66,7 @@ body {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-end;
+  align-self: center;
   background-image: url("./images/Ellipse 19@2x.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -217,6 +218,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 120px;
   padding: 40px;
   text-align: center;
 }
@@ -230,7 +232,6 @@ li {
 }
 
 .contact-p {
-  margin-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -241,7 +242,6 @@ li {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  margin-top: 40px;
 }
 
 .text-input {
@@ -328,4 +328,83 @@ footer {
 #finalbutton:hover span::after {
   opacity: 1;
   right: 0;
+}
+
+@media (min-width: 600px) {
+  .skills {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 447px;
+    margin: auto;
+    background-image: none;
+  }
+
+  .skills2 {
+    text-align: center;
+    padding: 0;
+    flex: 20%;
+  }
+
+  .bio {
+    width: 447px;
+    margin: auto;
+  }
+
+  .divider {
+    width: 448px;
+  }
+
+  .divider2 {
+    width: 90%;
+  }
+
+  .recent > h2 {
+    margin-left: 102px;
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+
+  .multipost {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .img-post {
+    width: 684px;
+    height: 448px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .contact {
+    margin-top: 228px;
+    max-width: 684px;
+  }
+
+  #finalbutton {
+    margin: auto;
+    margin-top: 101px;
+  }
+
+  body {
+    background-image: url("./images/two-circles-header.png"), url('./images/Group65-1.png');
+    background-position: top, center center;
+    background-size: 90%, 100%;
+  }
+
+  .postinverted {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+  }
+
+  .imginverted {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
 }
