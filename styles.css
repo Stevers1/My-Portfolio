@@ -41,7 +41,7 @@ body {
 .app-bar {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   margin-bottom: 40px;
 }
 
@@ -129,7 +129,7 @@ li {
   padding-left: 40px;
 }
 
-.recent > h2 {
+.br {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -143,6 +143,7 @@ li {
   padding-right: 40px;
   flex-direction: column;
   padding-top: 48px;
+  gap: 40px;
 }
 
 .post {
@@ -154,6 +155,11 @@ li {
   width: 327px;
   height: 236px;
   margin: auto auto;
+  background-image: url(./images/Snapshoot_Portfolio@2x.png);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position: center;
+  max-width: 98%;
 }
 
 .languages {
@@ -331,6 +337,14 @@ footer {
   right: 0;
 }
 
+.nobr {
+  display: none;
+}
+
+.desk-icons {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .skills {
     flex-wrap: nowrap;
@@ -359,9 +373,20 @@ footer {
     width: 90%;
   }
 
-  .recent > h2 {
+  .br {
     margin-left: 102px;
+    display: none;
   }
+
+  .nobr {
+    display: block;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 114px;
+    color: #9390FF;
+  }
+
+
 
   .post {
     display: grid;
@@ -369,7 +394,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 24px;
     padding-top: 88px;
-    max-width: 1056px;
+    max-width: 1100px;
   }
 
   .multipost {
@@ -384,14 +409,15 @@ footer {
   .img-post {
     width: 684px;
     height: 448px;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit:contain;
     justify-self: end;
     margin: 0;
     background-image: url(./images/Snapshoot_Portfolio@2x.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-color: white;
+    
 
   }
 
@@ -443,5 +469,32 @@ footer {
 
   .seebutton {
     margin-top: 14px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+  .workarrow{
+    display: none;
+  }
+
+  .tripleicon {
+    
+    display: none;
+  
+  }
+
+
+  .app-bar {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .desk-icons {
+    display: flex;
+    gap: 20px;
   }
 }
