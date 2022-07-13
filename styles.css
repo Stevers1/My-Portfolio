@@ -365,24 +365,34 @@ footer {
 
   .post {
     display: grid;
+    justify-items: center;
     grid-template-columns: 2fr 1fr;
-    justify-content: center;
     gap: 24px;
+    padding-top: 88px;
+    max-width: 1056px;
   }
 
   .multipost {
+    display: flex;
+    align-items: center;
     padding-left: 142px;
     padding-right: 142px;
+
+
   }
 
   .img-post {
     width: 684px;
     height: 448px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit:inherit;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit:contain;
     justify-self: end;
     margin: 0;
+    background-image: url(./images/Snapshoot_Portfolio@2x.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+
   }
 
 
@@ -416,5 +426,22 @@ footer {
 
   p{
     text-shadow: 2px 2px 4px #000000;
+  }
+
+  .textos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-title {
+    padding-top: 0;
+  }
+
+  .post-desc {
+    padding-bottom: 24px;
+  }
+
+  .seebutton {
+    margin-top: 14px;
   }
 }
