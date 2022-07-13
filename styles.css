@@ -106,6 +106,10 @@ li {
   padding-bottom: 40px;
 }
 
+.divwork {
+  display: none;
+}
+
 .arrow {
   width: 15px;
   height: 10px;
@@ -380,10 +384,12 @@ footer {
 
   .nobr {
     display: block;
-    font-weight: 700;
+    font-style: normal;
     font-size: 64px;
+    font-weight: 700;
     line-height: 114px;
     color: #9390FF;
+    padding-left: 2% ;
   }
 
 
@@ -430,6 +436,9 @@ footer {
   #finalbutton {
     margin: auto;
     margin-top: 101px;
+    width: 250px;
+    height: 40px;
+
   }
 
   body {
@@ -495,6 +504,23 @@ footer {
 
   .desk-icons {
     display: flex;
+    gap: 20px;
+  }
+
+  .name-intro{
+    font-size: 90px;
+  }
+
+  .divwork{
+    display: block;
+  }
+
+  .recent {
+    margin-top: 232px;
+  }
+
+  footer {
+    flex-direction: row;
     gap: 20px;
   }
 }
