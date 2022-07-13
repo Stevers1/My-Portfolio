@@ -349,7 +349,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .skills {
     flex-wrap: nowrap;
     justify-content: space-around;
