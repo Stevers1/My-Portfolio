@@ -6,9 +6,10 @@ body {
   background-color: #191765;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-image: url("./images/Ellipse 18@2xleft.png");
-  background-repeat: no-repeat;
-  background-size: 150px;
+  background-image: url("./images/Ellipse 18@2xleft.png"), url('./images/Group65-1.png');
+  background-position: top left, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150px, 100%;
   margin: 0;
 }
 
@@ -40,7 +41,7 @@ body {
 .app-bar {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 40px;
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 .divider {
-  width: 370px;
+  width: 327px;
   height: 0;
   border: 1px solid grey;
   margin: auto;
@@ -65,7 +66,7 @@ body {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-end;
+  align-self: center;
   background-image: url("./images/Ellipse 19@2x.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -105,6 +106,10 @@ li {
   padding-bottom: 40px;
 }
 
+.divwork {
+  display: none;
+}
+
 .arrow {
   width: 15px;
   height: 10px;
@@ -128,7 +133,7 @@ li {
   padding-left: 40px;
 }
 
-.recent > h2 {
+.br {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -142,6 +147,7 @@ li {
   padding-right: 40px;
   flex-direction: column;
   padding-top: 48px;
+  gap: 40px;
 }
 
 .post {
@@ -153,11 +159,17 @@ li {
   width: 327px;
   height: 236px;
   margin: auto auto;
+  background-image: url(./images/Snapshoot_Portfolio@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  max-width: 98%;
 }
 
 .languages {
   display: flex;
   justify-content: space-around;
+  text-shadow: #3a3837;
 }
 
 .post-title {
@@ -217,6 +229,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 120px;
   padding: 40px;
   text-align: center;
 }
@@ -230,7 +243,6 @@ li {
 }
 
 .contact-p {
-  margin-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -241,7 +253,6 @@ li {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  margin-top: 40px;
 }
 
 .text-input {
@@ -328,4 +339,179 @@ footer {
 #finalbutton:hover span::after {
   opacity: 1;
   right: 0;
+}
+
+.nobr {
+  display: none;
+}
+
+.desk-icons {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 447px;
+    margin: auto;
+    background-image: none;
+  }
+
+  .skills2 {
+    text-align: center;
+    padding: 0;
+    flex: 20%;
+  }
+
+  .bio {
+    width: 447px;
+    margin: auto;
+  }
+
+  .divider {
+    width: 448px;
+  }
+
+  .divider2 {
+    width: 90%;
+  }
+
+  .br {
+    margin-left: 102px;
+    display: none;
+  }
+
+  .nobr {
+    display: block;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 114px;
+    color: #9390ff;
+    padding-left: 2%;
+  }
+
+  .post {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    padding-top: 88px;
+    max-width: 1100px;
+  }
+
+  .multipost {
+    display: flex;
+    align-items: center;
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .img-post {
+    max-width: 684px;
+    max-height: 448px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    justify-self: end;
+    margin: 0;
+    background-image: url(./images/Snapshoot_Portfolio@2x.png);
+    background-repeat: no-repeat;
+    resize: both;
+    overflow: auto;
+  }
+
+  .contact {
+    margin-top: 228px;
+    max-width: 684px;
+  }
+
+  #finalbutton {
+    margin: auto;
+    margin-top: 101px;
+    width: 250px;
+    height: 40px;
+  }
+
+  body {
+    background-image: url("./images/two-circles-header.png"), url('./images/Group65-1.png');
+    background-position: top, center center;
+    background-size: 90%, 100%;
+  }
+
+  .postinverted {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+  }
+
+  .imginverted {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: start;
+  }
+
+  p {
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  .textos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-title {
+    padding-top: 0;
+  }
+
+  .post-desc {
+    padding-bottom: 24px;
+  }
+
+  .seebutton {
+    margin-top: 14px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .workarrow {
+    display: none;
+  }
+
+  .tripleicon {
+    display: none;
+  }
+
+  .app-bar {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .desk-icons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .name-intro {
+    font-size: 90px;
+  }
+
+  .divwork {
+    display: block;
+  }
+
+  .recent {
+    margin-top: 232px;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
