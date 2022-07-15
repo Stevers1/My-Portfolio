@@ -13,28 +13,25 @@ body {
   margin: 0;
 }
 
-/*nice work!*/
+/* nice work! */
 .name-intro {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
-  color: #7d73fc;
   padding-bottom: 3vh;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
+  background-image:
+    linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -156,7 +153,7 @@ li {
 }
 
 @keyframes mymove {
-  0% {transform: rotate(360deg);}
+  0% { transform: rotate(360deg); }
 }
 
 .recent {
